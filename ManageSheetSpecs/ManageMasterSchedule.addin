@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command ManageMasterSchedule</Text>
+    <Description>Export and Update Master Schedule</Description>
+    <Assembly>ManageMasterSchedule.dll</Assembly>
+    <FullClassName>ManageMasterSchedule.Command</FullClassName>
+    <ClientId>5354e38b-6401-4217-b66a-94f7936985bb</ClientId>
+    <VendorId>Kirksey</VendorId>
+    <VendorDescription>Kirksey Architecture, http://kirksey.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application ManageMasterSchedule</Name>
+    <Assembly>ManageMasterSchedule.dll</Assembly>
+    <FullClassName>ManageMasterSchedule.App</FullClassName>
+    <ClientId>4ac9b61e-801d-42a3-95d9-e8a3b6decfac</ClientId>
+    <VendorId>Kirksey</VendorId>
+    <VendorDescription>Kirksey Architecture, http://kirksey.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
