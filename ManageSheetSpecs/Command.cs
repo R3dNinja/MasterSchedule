@@ -82,12 +82,12 @@ namespace ManageMasterSchedule
                 {
                     //rtnView = vs as Autodesk.Revit.DB.View;
                     //return rtnView;
-                    p = vs.get_Parameter("TemplateCategory");
+                    p = v.LookupParameter("TemplateCategory");
                     setTemplateCategory(p.AsString());
                 }
                 else if (sheetName == "Starting View")
                 {
-                    p = vs.get_Parameter("TemplateCategory");
+                    p = v.LookupParameter("TemplateCategory");
                     setTemplateCategory(p.AsString());
                 }
             }
@@ -220,7 +220,7 @@ namespace ManageMasterSchedule
             return pages;
         }
 
-        string GetParameterValueString(Element e, BuiltInParameter bip)
+        /*string GetParameterValueString(Element e, BuiltInParameter bip)
         {
             Parameter p = e.get_Parameter(bip);
 
@@ -254,7 +254,7 @@ namespace ManageMasterSchedule
                 s = ", " + bip.ToString() + "=" + s;
             }
             return s;
-        }
+        }*/
 
         public class Util
         {

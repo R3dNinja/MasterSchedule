@@ -155,7 +155,7 @@ namespace ManageMasterSchedule
                 }
             }
 
-            ICollection<ElementId> idsDeleted = null;
+            //ICollection<ElementId> idsDeleted = null;
             Transaction tx;
             int nDeleted = 0;
 
@@ -471,15 +471,15 @@ namespace ManageMasterSchedule
             using (Transaction tx = new Transaction(doc))
             {
                 tx.Start("Organize Sheet");
-                mySheet.get_Parameter("*Discipline").Set("GENERAL");
-                mySheet.get_Parameter("*Discipline Code").Set("00");
+                mySheet.LookupParameter("*Discipline").Set("GENERAL");
+                mySheet.LookupParameter("*Discipline Code").Set("00");
                 if (templateCategory == "ARCHITECTURE")
                 {
-                    mySheet.get_Parameter("*Discipline Subcode").Set("A070 MASTER SCHEDULE");
+                    mySheet.LookupParameter("*Discipline Subcode").Set("A070 MASTER SCHEDULE");
                 }
                 else
                 {
-                    mySheet.get_Parameter("*Discipline Subcode").Set("IA070 MASTER SCHEDULE");
+                    mySheet.LookupParameter("*Discipline Subcode").Set("IA070 MASTER SCHEDULE");
                 }
                 tx.Commit();
             }

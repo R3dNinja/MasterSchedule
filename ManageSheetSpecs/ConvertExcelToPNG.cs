@@ -117,7 +117,7 @@ namespace ManageMasterSchedule
                 double fntSize = sheet.Range[searchRow].CellStyle.Font.Size;
                 var fgColor = sheet.Range[searchRow].CellStyle.PatternColorIndex;
                 var bgColor = sheet.Range[searchRow].CellStyle.ColorIndex;
-                ExcelKnownColors checkColor = (ExcelKnownColors)65;
+                //ExcelKnownColors checkColor = (ExcelKnownColors)65;
                 fixCellSize(sheet, x);
 
                 /*if (fntSize != 18)

@@ -36,7 +36,7 @@ namespace BuildingCoder
         /// built-in parameter if it is available on
         /// the given element, else an empty string.
         ///
-        string GetParameterValueString(Element e, BuiltInParameter bip)
+        /*string GetParameterValueString(Element e, BuiltInParameter bip)
         {
             Parameter p = e.get_Parameter(bip);
 
@@ -70,7 +70,7 @@ namespace BuildingCoder
                 s = ", " + bip.ToString() + "=" + s;
             }
             return s;
-        }
+        }*/
 
         public Result Execute(ExternalCommandData commandData, ref String message, ElementSet elements)
         {
